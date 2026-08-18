@@ -145,4 +145,14 @@ DocMind-AI/
 ├── .venv/
 
 └── README.md
+## Evaluation Results
+
+The system was evaluated using 10 question-answer test cases.
+
+- Tests: 10
+- Passed: 10
+- Accuracy: 100%
+- Average latency: 0.9908 seconds
+
+Detailed evaluation results are available in `evaluation/results.json`.
 
