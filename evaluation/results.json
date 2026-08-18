@@ -1,0 +1,88 @@
+{
+  "total_tests": 10,
+  "passed": 10,
+  "accuracy": 100.0,
+  "average_latency_seconds": 0.9908,
+  "results": [
+    {
+      "question": "What is DocMind AI?",
+      "expected_answer": "DocMind AI is a retrieval-augmented generation system designed to answer questions from trusted documents.",
+      "generated_answer": "DocMind AI Project\n\nDocMind AI is a retrieval-augmented generation system designed to answer questions from trusted documents. For evaluation, DocMind AI will be tested with at least ten questions.",
+      "latency_seconds": 9.489,
+      "accuracy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What are the five main stages of the system?",
+      "expected_answer": "The five stages are document loading, text chunking, embedding generation, vector storage, and information retrieval.",
+      "generated_answer": "The system contains five main stages: document loading, text chunking, embedding generation, vector storage, and information retrieval. The system should provide answers based on the retrieved information rather than inventing information that is not present in the documents.",
+      "latency_seconds": 0.058,
+      "accuracy": 0.8667,
+      "passed": true
+    },
+    {
+      "question": "What does document loading do?",
+      "expected_answer": "Document loading reads the source material.",
+      "generated_answer": "The system contains five main stages: document loading, text chunking, embedding generation, vector storage, and information retrieval. Document loading reads the source material.",
+      "latency_seconds": 0.0364,
+      "accuracy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is the purpose of text chunking?",
+      "expected_answer": "Text chunking divides large documents into smaller pieces.",
+      "generated_answer": "The system contains five main stages: document loading, text chunking, embedding generation, vector storage, and information retrieval. Text chunking divides large documents into smaller pieces.",
+      "latency_seconds": 0.0411,
+      "accuracy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What do embeddings do?",
+      "expected_answer": "Embeddings convert text into numerical representations.",
+      "generated_answer": "Embeddings convert text into numerical representations. ChromaDB stores the embeddings and allows similarity search.",
+      "latency_seconds": 0.0421,
+      "accuracy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What does ChromaDB do?",
+      "expected_answer": "ChromaDB stores the embeddings and allows similarity search.",
+      "generated_answer": "ChromaDB stores the embeddings and allows similarity search.",
+      "latency_seconds": 0.0372,
+      "accuracy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What does the retriever do?",
+      "expected_answer": "The retriever finds the most relevant pieces of information for a user's question.",
+      "generated_answer": "The retriever finds the most relevant pieces of information for a user's question. The retriever f\nblished on GitHub with documentation explaining the architecture, setup instructions, evaluation results, limitations, and future improvements.",
+      "latency_seconds": 0.0419,
+      "accuracy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What should the system do instead of inventing information?",
+      "expected_answer": "The system should provide answers based on the retrieved information rather than inventing information that is not present in the documents.",
+      "generated_answer": "The system should provide answers based on the retrieved information rather than inventing information that is not present in the documents. The system contains five main stages: document loading, text chunking, embedding generation, vector storage, and information retrieval.",
+      "latency_seconds": 0.0373,
+      "accuracy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What will the evaluation measure?",
+      "expected_answer": "The evaluation will measure answer quality, retrieval performance, latency, and failure cases.",
+      "generated_answer": "The evaluation will measure answer quality, retrieval performance, latency, and failure cases. The project will be published on GitHub with documentation explaining th\nblished on GitHub with documentation explaining the architecture, setup instructions, evaluation results, limitations, and future improvements.",
+      "latency_seconds": 0.0584,
+      "accuracy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "Where will the project be published?",
+      "expected_answer": "The project will be published on GitHub with documentation explaining the architecture, setup instructions, evaluation results, limitations, and future improvements.",
+      "generated_answer": "The project will be published on GitHub with documentation explaining th The evaluation will measure answer quality, retrieval performance, latency, and failure cases.",
+      "latency_seconds": 0.0662,
+      "accuracy": 0.6316,
+      "passed": true
+    }
+  ]
+}

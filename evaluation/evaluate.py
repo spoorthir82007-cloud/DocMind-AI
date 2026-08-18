@@ -1,4 +1,9 @@
-@'
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+
 import json
 import time
 from pathlib import Path
@@ -40,7 +45,7 @@ def main():
         answer_words = set(answer.lower().split())
 
         overlap = len(expected_words & answer_words)
-        accuracy = overlap / len(expected_words) if expected_words else 0
+        accuracy = overlap / len(expected_words)
 
         is_pass = accuracy >= 0.5
 
@@ -56,11 +61,11 @@ def main():
             "passed": is_pass
         })
 
-        print(f"\nQuestion: {question}")
-        print(f"Answer: {answer}")
-        print(f"Accuracy: {accuracy:.2%}")
-        print(f"Latency: {latency:.4f}s")
-        print(f"Passed: {is_pass}")
+        print("\nQuestion:", question)
+        print("Answer:", answer)
+        print("Accuracy:", f"{accuracy:.2%}")
+        print("Latency:", f"{latency:.4f}s")
+        print("Passed:", is_pass)
 
     average_latency = total_latency / len(questions)
 
@@ -78,13 +83,12 @@ def main():
     print("\n==============================")
     print("EVALUATION SUMMARY")
     print("==============================")
-    print(f"Tests: {len(questions)}")
-    print(f"Passed: {passed}")
-    print(f"Accuracy: {summary['accuracy']}%")
-    print(f"Average latency: {summary['average_latency_seconds']} seconds")
+    print("Tests:", len(questions))
+    print("Passed:", passed)
+    print("Accuracy:", summary["accuracy"], "%")
+    print("Average latency:", summary["average_latency_seconds"], "seconds")
     print("==============================")
 
 
 if __name__ == "__main__":
     main()
-'@ | Set-Content evaluation\evaluate.py

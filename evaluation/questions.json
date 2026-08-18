@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is DocMind AI?",
+    "expected_answer": "DocMind AI is a retrieval-augmented generation system designed to answer questions from trusted documents."
+  },
+  {
+    "question": "What are the five main stages of the system?",
+    "expected_answer": "The five stages are document loading, text chunking, embedding generation, vector storage, and information retrieval."
+  },
+  {
+    "question": "What does document loading do?",
+    "expected_answer": "Document loading reads the source material."
+  },
+  {
+    "question": "What is the purpose of text chunking?",
+    "expected_answer": "Text chunking divides large documents into smaller pieces."
+  },
+  {
+    "question": "What do embeddings do?",
+    "expected_answer": "Embeddings convert text into numerical representations."
+  },
+  {
+    "question": "What does ChromaDB do?",
+    "expected_answer": "ChromaDB stores the embeddings and allows similarity search."
+  },
+  {
+    "question": "What does the retriever do?",
+    "expected_answer": "The retriever finds the most relevant pieces of information for a user's question."
+  },
+  {
+    "question": "What should the system do instead of inventing information?",
+    "expected_answer": "The system should provide answers based on the retrieved information rather than inventing information that is not present in the documents."
+  },
+  {
+    "question": "What will the evaluation measure?",
+    "expected_answer": "The evaluation will measure answer quality, retrieval performance, latency, and failure cases."
+  },
+  {
+    "question": "Where will the project be published?",
+    "expected_answer": "The project will be published on GitHub with documentation explaining the architecture, setup instructions, evaluation results, limitations, and future improvements."
+  }
+]
