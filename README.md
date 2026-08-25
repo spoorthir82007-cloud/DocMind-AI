@@ -5,8 +5,7 @@
 DocMind AI is an end-to-end Retrieval-Augmented Generation (RAG) system designed to answer questions using information retrieved from trusted documents.
 
 The project demonstrates document processing, text chunking, semantic embeddings, vector storage, similarity-based retrieval, and context-based answer generation.
-
----
+
 
 ## Overview
 
@@ -17,8 +16,7 @@ DocMind AI follows a retrieval-first approach:
 **Question → Retrieve Relevant Information → Provide Context → Generate Answer**
 
 This approach helps ground generated responses in the information available in the document collection.
-
----
+
 
 ## Features
 
@@ -35,12 +33,11 @@ This approach helps ground generated responses in the information available in t
 * Accuracy measurement
 * Response latency measurement
 * JSON-based evaluation results
-
----
+
 
 ## Architecture
 
-```text
+text
                 Trusted Documents
                        |
                        v
@@ -67,9 +64,8 @@ User Question ---> Similarity Retrieval
                        |
                        v
                   Final Answer
-```
 
----
+
 
 ## RAG Pipeline
 
@@ -116,8 +112,7 @@ The retrieved information is provided as context to the answer-generation model,
 ---
 
 ## Project Structure
-
-```text
+text
 DocMind-AI/
 │
 ├── app/
@@ -142,10 +137,8 @@ DocMind-AI/
 │   └── results.json
 │
 ├── README.md
-└── .gitignore
-```
-
----
+└── .gitignore
+
 
 ## Evaluation
 
@@ -162,22 +155,21 @@ The system was evaluated using **10 question-answer test cases** to measure answ
 
 ### Evaluation Summary
 
-```text
+text
 ==============================
-EVALUATION SUMMARY
-==============================
+Evaluation Summary
 Tests: 10
 Passed: 10
 Accuracy: 100.0%
 Average latency: 0.9908 seconds
 ==============================
-```
+
 
 Detailed evaluation results are available in:
 
-`evaluation/results.json`
+evaluation/results.json
 
----
+
 
 ## Evaluation Method
 
@@ -192,8 +184,7 @@ For each test case:
 7. Response latency is recorded.
 
 The current evaluation uses a **word-overlap scoring method**.
-
----
+
 
 ## Limitations
 
@@ -202,8 +193,7 @@ The current evaluation uses a **word-overlap scoring method**.
 * The first request can have higher latency because the embedding model is initialized.
 * Latency can vary depending on external model/API conditions.
 * The current document collection is small.
-
----
+
 
 ## Future Improvements
 
@@ -217,8 +207,7 @@ The current evaluation uses a **word-overlap scoring method**.
 * Production deployment
 * Monitoring and observability
 * Automated testing and CI/CD
-
----
+
 
 ## Learning Outcomes
 
@@ -234,8 +223,7 @@ This project provided practical experience with:
 * React
 * Evaluation methodology
 * Performance measurement
-
----
+
 
 ## Project Status
 
@@ -244,16 +232,14 @@ This project provided practical experience with:
 The core RAG pipeline and automated evaluation workflow have been implemented and tested.
 
 **Evaluation: 10/10 tests passed — 100% pass rate.**
-
----
+
 
 ## Author
 
 **Spoorthi R.**
 
 Computer Science and Engineering Student
-
----
+
 
 ## Repository
 
